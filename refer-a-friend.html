@@ -373,7 +373,28 @@
       .cta-row{flex-direction:column;align-items:flex-start}
       .section{padding:54px 0}
     }
-  </style>
+  
+/* === Consistent Davila Insurance Group site header === */
+.navrow{min-height:108px;gap:20px}
+.brand{width:300px;flex:0 0 auto}
+.brand img{height:96px;object-fit:contain;object-position:left center}
+.navlinks{gap:18px;font-size:12.5px}
+@media(max-width:1050px){
+  .brand{width:245px}
+  .brand img{height:82px}
+  .navlinks{gap:10px;font-size:11.5px}
+}
+@media(max-width:900px){
+  .navlinks{top:108px}
+}
+@media(max-width:620px){
+  .navrow{min-height:82px}
+  .navlinks{top:82px}
+  .brand{width:205px}
+  .brand img{height:68px}
+}
+
+</style>
 </head>
 
 <body>
@@ -387,26 +408,19 @@
     </div>
   </div>
 
-  <header class="nav">
-    <div class="container navrow">
-      <a class="brand" href="index.html" aria-label="Davila Insurance Group Home">
-        <img src="davila-insurance-group-logo.png" alt="Davila Insurance Group">
-      </a>
-
-      <button class="mobile" type="button" aria-label="Open menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
-
-      <nav class="navlinks">
-        <a href="life-insurance.html">Life Insurance</a>
-        <a href="health-insurance.html">Health Insurance</a>
-        <a href="medicare.html">Medicare</a>
-        <a href="employee-benefits.html">Employee Benefits</a>
-        <a href="about.html">About Us</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
-        <a class="navcta" href="#referral-form">Refer Someone</a>
-      </nav>
-    </div>
-  </header>
+  <header class="nav"><div class="container navrow">
+<a class="brand" href="index.html" aria-label="Davila Insurance Group Home"><img alt="Davila Insurance Group" src="davila_insurance_group_logo.png"/></a>
+<button aria-label="Open menu" class="mobile" id="mobile" type="button" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+<nav class="navlinks" id="navlinks">
+<a href="life-insurance.html">Life Insurance</a>
+<a href="health-insurance.html">Health Insurance</a>
+<a href="medicare.html">Medicare</a>
+<a href="employee-benefits.html">Employee Benefits</a>
+<a href="about.html">About Us</a>
+<a href="resources.html">Resources</a>
+<a href="contact.html">Contact</a>
+<a class="navcta" href="free-review.html">Get My Free Review</a>
+</nav></div></header>
 
   <main>
     <section class="ref-hero">
